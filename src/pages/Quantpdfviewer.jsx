@@ -7,18 +7,18 @@ import { IoMdArrowDropdown } from "react-icons/io";
 
 const QuantPdfViewer = () => {
     const pdfs = [
-        { title: "Norman Lewis - Word Power Made Easy", url: "../public/pdfs/document1.pdf" },
-        { title: "Magoosh GRE Vocab eBook", url: "../public/pdfs/document2.pdf" },
-        { title: "Eliot Quinley - Vocabulary in Context", url: "../public/pdfs/document3.pdf" },
-        { title: "verbal RC notes", url: "../public/pdfs/document4.pdf" },
-        { title: "GRE verbal notes", url: "../public/pdfs/document5.pdf" },
-        { title: "GRE antonyms", url: "../public/pdfs/document6.pdf" },
-        { title: "John suter vocab in context of music ,arts and literature", url: "../public/pdfs/document7.pdf" },
-        { title: "Learning express Gre vocab flash", url: "../public/pdfs/document8.pdf" },
-        { title: "List of 100 frequent words that appear in GRE", url: "../public/pdfs/document9.pdf" },
-        { title: "The vocabulary builder workbook", url: "../public/pdfs/document10.pdf" },
-        { title: "500 essential GRE words by Manhattan", url: "../public/pdfs/document11.pdf" },
-        { title: "500 advanced GRE words by Manhattan", url: "../public/pdfs/document12.pdf" },
+        { title: "Norman Lewis - Word Power Made Easy", url: "/pdfs/document1.pdf" },
+        { title: "Magoosh GRE Vocab eBook", url: "/pdfs/document2.pdf" },
+        { title: "Eliot Quinley - Vocabulary in Context", url: "/pdfs/document3.pdf" },
+        { title: "verbal RC notes", url: "/pdfs/document4.pdf" },
+        { title: "GRE verbal notes", url: "/pdfs/document5.pdf" },
+        { title: "GRE antonyms", url: "/pdfs/document6.pdf" },
+        { title: "John suter vocab in context of music ,arts and literature", url: "/pdfs/document7.pdf" },
+        { title: "Learning express Gre vocab flash", url: "/pdfs/document8.pdf" },
+        { title: "List of 100 frequent words that appear in GRE", url: "/pdfs/document9.pdf" },
+        { title: "The vocabulary builder workbook", url: "/pdfs/document10.pdf" },
+        { title: "500 essential GRE words by Manhattan", url: "/pdfs/document11.pdf" },
+        { title: "500 advanced GRE words by Manhattan", url: "/pdfs/document12.pdf" },
     ];
 
     const [selectedPdf, setSelectedPdf] = useState(null);
