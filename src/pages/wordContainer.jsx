@@ -182,8 +182,9 @@ const WordContainer = () => {
     }
 
     return (
-        <div className="bg-[#6B7280]  text-[#1F2937] p-6 sm:p-8 md:p-10 lg:p-12 flex flex-col items-center justify-center h-screen min-h-[120vh]  relative">
-            <div className="absolute flex flex-col sm:flex-row gap-8 top-5 text-blue-400 text-sm  lg:text-base">
+        <div className="bg-[#6B7280]  text-[#1F2937] p-4  md:p-8 lg:p-12 flex flex-col items-center justify-center  min-h-screen">
+
+            <div className="flex flex-col md:flex-row gap-8 top-5 text-blue-400 text-sm  lg:text-base">
                 <button
                     onClick={handleClick}
                     className="underline  hover:text-blue-700 text-[#FFFFFF]">
@@ -196,8 +197,7 @@ const WordContainer = () => {
                 </button>
             </div>
 
-            <div className="text-center max-w-4xl w-full min-h-[500px] sm:min-h-[400px] md:min-h-[500px] lg:min-h-[650px] 
-             bg-[#1E1E2F]  flex items-center flex-col justify-center relative rounded-lg shadow-2xl border-none border p-2 ">
+            <div className="text-center max-w-4xl w-full h-2/3 bg-[#1E1E2F]  flex items-center flex-col justify-center rounded-lg shadow-2xl border-none border p-2 mt-4">
                 <div className="flex">
                     <h1 className=" sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-10 text-[#FFFFFF] flex justify-center items-center">
                         <span className="lg:text-5xl sm:text-2xl">({currentWordIndex + 1})</span> Word: {words[currentWordIndex].word}
@@ -222,45 +222,46 @@ const WordContainer = () => {
                         </p>
                     </div>
                 )}
+                <div className="flex flex-col w-full gap-8">
+                    <div className="flex flex-col sm:flex-row justify-center items-center gap-8 w-full">
 
-                <div className="flex flex-col sm:flex-row justify-between w-2/3 sm:w-2/3 gap-2 sm:gap-2 mb-6 sm:m-6">
-                    <button
-                        onClick={handlePrevious}
-                        className="bg-[#374151] text-[#FFFFFF] hover:bg-[#4B5563]  font-semibold py-2 px-4 rounded-lg text-sm sm:text-base md:text-lg transition duration-300"
-                    >
-                        Previous
-                    </button>
-                    <button
-                        onClick={handleNext}
-                        className="bg-[#374151] text-[#FFFFFF] hover:bg-[#4B5563]  font-semibold py-2 px-4 rounded-lg text-sm sm:text-base md:text-lg  transition duration-300"
-                    >
-                        Next
-                    </button>
-                    <button
-                        className="bg-[#374151] text-[#FFFFFF] hover:bg-[#4B5563]  font-semibold py-2 px-4 rounded-lg text-sm sm:text-base md:text-lg transition duration-300 w-full sm:w-auto"
-                        onClick={handleStore}
-                    >
-                        I did not know this word
-                    </button>
-                </div>
+                        <button
+                            onClick={handlePrevious}
+                            className="bg-[#374151] text-[#FFFFFF] hover:bg-[#4B5563]  font-semibold py-2 px-4 rounded-lg text-sm sm:text-base md:text-lg transition duration-300"
+                        >
+                            Previous
+                        </button>
+                        <button
+                            onClick={handleNext}
+                            className="bg-[#374151] text-[#FFFFFF] hover:bg-[#4B5563]  font-semibold py-2 px-4 rounded-lg text-sm sm:text-base md:text-lg  transition duration-300"
+                        >
+                            Next
+                        </button>
+                        <button
+                            className="bg-[#374151] text-[#FFFFFF] hover:bg-[#4B5563]  font-semibold py-2 px-4 rounded-lg text-sm sm:text-base md:text-lg transition duration-300 w-full sm:w-auto"
+                            onClick={handleStore}
+                        >
+                            I did not know this word
+                        </button>
+                    </div>
 
-
-                <div className="absolute bottom-2 lg:bottom-4 sm:bottom-2 right-2 flex gap-8 ">
-                    <button
-                        onClick={() => handleDifficulty('easy')}
-                        className="bg-[#374151] text-[#FFFFFF] hover:bg-[#4B5563]  border-black font-medium py-1 px-4 rounded-lg">
-                        Easy
-                    </button>
-                    <button
-                        onClick={() => handleDifficulty('medium')}
-                        className="bg-[#374151] text-[#FFFFFF] hover:bg-[#4B5563]   border-black font-medium py-1 px-4 rounded-lg">
-                        Medium
-                    </button>
-                    <button
-                        onClick={() => handleDifficulty('hard')}
-                        className="bg-[#374151] text-[#FFFFFF] hover:bg-[#4B5563]  border-black font-medium py-1 px-4 rounded-lg ">
-                        Hard
-                    </button>
+                    <div className=" flex gap-8 justify-end items-end ">
+                        <button
+                            onClick={() => handleDifficulty('easy')}
+                            className="bg-[#374151] text-[#FFFFFF] hover:bg-[#4B5563]  border-black font-medium py-1 px-4 rounded-lg">
+                            Easy
+                        </button>
+                        <button
+                            onClick={() => handleDifficulty('medium')}
+                            className="bg-[#374151] text-[#FFFFFF] hover:bg-[#4B5563]   border-black font-medium py-1 px-4 rounded-lg">
+                            Medium
+                        </button>
+                        <button
+                            onClick={() => handleDifficulty('hard')}
+                            className="bg-[#374151] text-[#FFFFFF] hover:bg-[#4B5563]  border-black font-medium py-1 px-4 rounded-lg ">
+                            Hard
+                        </button>
+                    </div>
                 </div>
 
             </div>
@@ -273,7 +274,7 @@ const WordContainer = () => {
                 draggable
                 pauseOnHover />
 
-            <div className="absolute bottom-10 right-14 lg:top-10 lg:right-10  sm: flex sm:items-center">
+            <div className=" flex items-center mt-4 md:mt-0">
                 <NoteBook
                     note={note}
                     setNote={setNote}
@@ -285,7 +286,7 @@ const WordContainer = () => {
                     fetchNoteForWord={fetchNoteForWord}
                 />
             </div>
-        </div>
+        </div >
 
     );
 };
