@@ -214,10 +214,10 @@ const WordContainer = () => {
                 </p>
                 {active && (
                     <div className="flex flex-col justify-center items-center w-full py-3">
-                        <p className="text-lg sm:text-xl md:text-2xl mb-6 w-full sm:w-3/4 md:w-2/3 mx-auto text-[#FFFFFF]">
+                        <p className="text-base md:text-2xl mb-6 w-full text-[#FFFFFF]">
                             <span className="text-[#0D9488]">Meaning:</span> {words[currentWordIndex].meaning}
                         </p>
-                        <p className="text-lg sm:text-xl md:text-2xl mb-6 w-full sm:w-3/4 md:w-2/3 mx-auto text-[#FFFFFF]">
+                        <p className="text-base md:text-2xl mb-6 w-full text-[#FFFFFF]">
                             <span className="text-[#0D9488]">Sentence:</span> {words[currentWordIndex].sentence}
                         </p>
                     </div>
@@ -227,18 +227,18 @@ const WordContainer = () => {
 
                         <button
                             onClick={handlePrevious}
-                            className="bg-[#374151] text-[#FFFFFF] hover:bg-[#4B5563]  font-semibold py-2 px-4 rounded-lg text-sm sm:text-base md:text-lg transition duration-300"
+                            className="bg-[#374151] text-[#FFFFFF] hover:bg-[#4B5563]  font-semibold py-2 px-4 rounded-lg text-sm sm:text-base md:text-lg transition duration-300 w-full md:w-auto"
                         >
                             Previous
                         </button>
                         <button
                             onClick={handleNext}
-                            className="bg-[#374151] text-[#FFFFFF] hover:bg-[#4B5563]  font-semibold py-2 px-4 rounded-lg text-sm sm:text-base md:text-lg  transition duration-300"
+                            className="bg-[#374151] text-[#FFFFFF] hover:bg-[#4B5563]  font-semibold py-2 px-4 rounded-lg text-sm sm:text-base md:text-lg  transition duration-300 w-full md:w-auto"
                         >
                             Next
                         </button>
                         <button
-                            className="bg-[#374151] text-[#FFFFFF] hover:bg-[#4B5563]  font-semibold py-2 px-4 rounded-lg text-sm sm:text-base md:text-lg transition duration-300 w-full sm:w-auto"
+                            className="bg-[#374151] text-[#FFFFFF] hover:bg-[#4B5563]  font-semibold py-2 px-4 rounded-lg text-sm sm:text-base md:text-lg transition duration-300 w-full md:w-auto"
                             onClick={handleStore}
                         >
                             I did not know this word
@@ -274,7 +274,7 @@ const WordContainer = () => {
                 draggable
                 pauseOnHover />
 
-            <div className=" flex items-center mb-0 lg:mb-10 md:mt-0 w-full lg:w-1/2">
+            <div className=" flex items-center mb-0 lg:mb-10 mt-2 md:mt-0 w-full lg:w-1/2">
                 <NoteBook
                     note={note}
                     setNote={setNote}

@@ -72,8 +72,8 @@ const RegisterUser = () => {
                 backgroundSize: 'cover',
             }}
         >
-            <form className="space-y-6 bg-opacity-10 backdrop-blur-6 bg-white p-14 rounded-2xl shadow-xl w-1/3" onSubmit={handleSubmit(onSubmit)}>
-                <div className="grid grid-cols-1 gap-4 w-full p-4">
+            <form className="space-y-6 bg-opacity-10 backdrop-blur-6 bg-white p-8 rounded-2xl shadow-xl w-full lg:w-1/3" onSubmit={handleSubmit(onSubmit)}>
+                <div className="grid grid-cols-1 gap-4 w-full p-2 lg:p-4">
                     {/* Name Field */}
                     <div className="flex flex-col">
                         <Controller

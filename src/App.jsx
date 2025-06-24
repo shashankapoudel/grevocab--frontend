@@ -33,8 +33,10 @@ function App() {
     <>
       <BrowserRouter>
         <div>
+          {user &&
 
-          <Logout setUser={setUser} />
+            <Logout setUser={setUser} />
+          }
           <Routes>
 
             <Route path="/" element={user ? <Home /> : <Navigate to="/login" />} />
