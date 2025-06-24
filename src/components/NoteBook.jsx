@@ -7,7 +7,7 @@ const NoteBook = ({ note, setNote, words, currentWordIndex, user, toast, }) => {
         const wordId = wordToAdd._id;
         const token = user.data.token;
         try {
-            const res = await fetch(`${BASE_URL}/word/note`, {
+            const res = await fetch(`${BASE_URL}/note`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

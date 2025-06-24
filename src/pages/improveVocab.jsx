@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom'
 
 
 const studyMaterialsForLowScore = [
-    { title: "List of 100 words that frequently appear in GRE", url: "../public/pdfs/document9.pdf" },
+    { title: "List of 100 words that frequently appear in GRE", url: "/pdfs/document9.pdf" },
     { title: "GRE verbal notes", url: "/pdfs/document5.pdf" },
     { title: "GRE antonyms", url: "/pdfs/document6.pdf" },
     { title: "Magoosh GRE Vocab eBook", url: "/pdfs/document2.pdf" },

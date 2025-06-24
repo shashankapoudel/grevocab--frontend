@@ -6,8 +6,6 @@ const PdfViewer = () => {
         <div className="flex flex-col gap-0">
             <VocabPdfViewer />
             <QuantPdfViewer />
-            <QuantPdfViewer />
-            <QuantPdfViewer />
         </div>
     )
 }
