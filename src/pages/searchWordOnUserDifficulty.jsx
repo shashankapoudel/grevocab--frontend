@@ -19,6 +19,7 @@ const SearchWordOnUserDifficulty = () => {
         word.userDifficulty.filter((entry) => entry.difficulty.toLowerCase() === wordDifficulty.toLowerCase()
         ).map((entry) => ({
             ...entry,
+            word: word.word,
             meaning: word.meaning,
             sentence: word.sentence
         }))

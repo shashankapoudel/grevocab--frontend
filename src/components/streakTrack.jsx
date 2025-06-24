@@ -9,7 +9,7 @@ const StreakTracker = () => {
     const getStreakData = async () => {
         const token = user.data.token;
         try {
-            const res = await fetch('http://localhost:5000/api/user/streak', {
+            const res = await fetch(`${BASE_URL}/user/streak`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',

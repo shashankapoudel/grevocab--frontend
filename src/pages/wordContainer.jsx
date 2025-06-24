@@ -104,7 +104,7 @@ const WordContainer = () => {
 
         const token = user.data.token;
         try {
-            const res = await fetch('http://localhost:5000/api/words/unknown', {
+            const res = await fetch(`${BASE_URL}/words/unknown`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -159,7 +159,7 @@ const WordContainer = () => {
         }))
         const token = user.data.token;
         try {
-            const res = await fetch('http://localhost:5000/api/word/difficulty', {
+            const res = await fetch(`${BASE_URL}/word/difficulty`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

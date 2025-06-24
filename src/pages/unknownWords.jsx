@@ -10,7 +10,7 @@ const UnknownWords = () => {
         const fetchUnknownWords = async () => {
             const token = user.data.token;
             try {
-                const res = await fetch(`${BASE_URL}/users/words/unknown-words`, {
+                const res = await fetch(`${BASE_URL}/words/unknown-words`, {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',

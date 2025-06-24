@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import BASE_URL from '../config/api';
 
 const NoteBook = ({ note, setNote, words, currentWordIndex, user, toast, }) => {
     const handleSaveNote = async () => {
@@ -6,7 +7,7 @@ const NoteBook = ({ note, setNote, words, currentWordIndex, user, toast, }) => {
         const wordId = wordToAdd._id;
         const token = user.data.token;
         try {
-            const res = await fetch('http://localhost:5000/api/word/note', {
+            const res = await fetch(`${BASE_URL}/word/note`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

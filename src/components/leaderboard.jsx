@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { FaArrowRight } from "react-icons/fa6";
+import BASE_URL from '../config/api';
 
 const Leaderboard = () => {
     const navigate = useNavigate()
@@ -13,7 +14,7 @@ const Leaderboard = () => {
         const token = user.data.token;
         // console.log(token);
         try {
-            const res = await fetch('http://localhost:5000/api/leaderboard', {
+            const res = await fetch(`${BASE_URL}/leaderboard`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
