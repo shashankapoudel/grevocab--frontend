@@ -182,7 +182,7 @@ const WordContainer = () => {
     }
 
     return (
-        <div className="bg-[#6B7280]  text-[#1F2937] p-4  md:p-8 lg:p-12 flex flex-col items-center justify-between min-h-screen tracking-wide">
+        <div className="bg-[#6B7280]  text-[#1F2937] p-4  md:p-8 flex flex-col items-center justify-between min-h-screen tracking-wide">
 
             <div className="flex flex-col md:flex-row gap-8 top-5 text-blue-400 text-sm  lg:text-base">
                 <button
@@ -274,7 +274,7 @@ const WordContainer = () => {
                 draggable
                 pauseOnHover />
 
-            <div className=" flex items-center mb-0 lg:mb-10 mt-2 md:mt-0 w-full lg:w-1/2">
+            <div className=" flex items-center mt-2 md:mt-0 w-full lg:w-1/2">
                 <NoteBook
                     note={note}
                     setNote={setNote}
