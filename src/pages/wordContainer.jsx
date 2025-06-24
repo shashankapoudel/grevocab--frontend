@@ -182,7 +182,7 @@ const WordContainer = () => {
     }
 
     return (
-        <div className="bg-[#6B7280]  text-[#1F2937] p-4  md:p-8 lg:p-12 flex flex-col items-center justify-center  min-h-screen">
+        <div className="bg-[#6B7280]  text-[#1F2937] p-4  md:p-8 lg:p-12 flex flex-col items-center justify-between min-h-screen">
 
             <div className="flex flex-col md:flex-row gap-8 top-5 text-blue-400 text-sm  lg:text-base">
                 <button
