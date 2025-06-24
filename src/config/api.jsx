@@ -6,6 +6,6 @@
 const BASE_URL =
     import.meta.env.MODE === "development"
         ? "http://localhost:4000/api"
-        : "https://gre-vocab-backend.onrender.com";
+        : "https://gre-vocab-backend.onrender.com/api";
 
 export default BASE_URL;
