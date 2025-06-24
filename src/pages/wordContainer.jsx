@@ -50,7 +50,7 @@ const WordContainer = () => {
         // console.log(wordId);
 
         try {
-            const res = await fetch(`${BASE_URL}/api/word/note/${wordId}`, {
+            const res = await fetch(`${BASE_URL}/note/${wordId}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
