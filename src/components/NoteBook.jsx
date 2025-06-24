@@ -27,19 +27,19 @@ const NoteBook = ({ note, setNote, words, currentWordIndex, user, toast, }) => {
         }
     }
     return (
-        <div className="flex flex-col w-full border items-center justify-center p-2 bg-[#6B7280]">
-            <div className='flex flex-col w-full'>
+        <div className="flex flex-col w-full border items-center justify-center p-2 bg-white">
+            <div className='flex flex-col w-full items-center justify-center'>
 
                 <textarea
                     placeholder="Add your personal note for this word"
                     value={note}
                     onChange={(e) => setNote(e.target.value)}
-                    className="w-full p-1 rounded border  text-gray-700 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white"
+                    className="w-full p-1 rounded text-gray-700 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white"
                     rows="3"
                     cols="30"
                 />
                 <button
-                    className=" text-black py-2 px-2 rounded hover:bg-blue-200 transition duration-300 text-center"
+                    className=" text-black py-2 px-2 rounded hover:bg-blue-200 transition duration-300 text-center border w-1/3"
                     onClick={handleSaveNote}
                 >
                     Save Note
