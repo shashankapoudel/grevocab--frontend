@@ -44,8 +44,8 @@ const Wordsearch = () => {
     };
 
     return (
-        <div className="flex flex-col  justify-center items-center w-full h-screen bg-[#FAF8FF]">
-            <div className='bg-white w-1/2 h-2/3 flex flex-col justify-center items-center p-2'>
+        <div className="flex flex-col  justify-center items-center w-full h-screen bg-[#6B7280]">
+            <div className='bg-[#1E1E2F] text-[#FFFFFF] w-1/2 h-2/3 flex flex-col justify-center items-center p-2'>
 
                 <h1 className="text-2xl font-bold mb-4">Search for a Word</h1>
                 <div className="flex flex-col sm:flex-row gap-4 items-center w-full sm:w-auto">
@@ -54,7 +54,7 @@ const Wordsearch = () => {
                         value={word}
                         onChange={handleWordChange}
                         placeholder="Enter a word"
-                        className="border border-gray-400 px-6 py-3 w-full sm:w-96 rounded-lg"
+                        className="border border-gray-400 text-[#111111] px-6 py-3 w-full sm:w-96 rounded-lg"
                     />
                     <button
                         onClick={fetchWordData}
@@ -67,17 +67,19 @@ const Wordsearch = () => {
                 <div className="mx-4 mt-10 py-2 gap-2">
                     {error && <p className="text-red-500">{error}</p>}
                     {wordData ? (
-                        <>
-                            <h2 className="text-4xl font-semibold text-center">{wordData.word}</h2>
-                            <p className='text-xl'><strong>Meaning:</strong> {wordData.meaning}</p>
-                            <p className='text-xl'><strong>Example:</strong> {wordData.example}</p>
+                        <div className='flex flex-col items-center '>
+                            <div className='flex flex-col gap-3'>
+                                <h2 className="text-4xl font-semibold text-center capitalize">{wordData.word}</h2>
+                                <p className='text-base'><strong>Meaning:</strong> {wordData.meaning}</p>
+                                <p className='text-base'><strong>Example:</strong> {wordData.example}</p>
+                            </div>
                             <button
-                                className="bg-green-500 text-white p-2 mt-4"
+                                className="bg-[#374151] text-[#FFFFFF] hover:bg-[#4B5563] p-2 mt-4"
                                 onClick={() => speak(wordData.word)}
                             >
                                 Hear Pronunciation
                             </button>
-                        </>
+                        </div>
                     ) : (
                         <p>No word found. Try searching for another word.</p>
                     )}

@@ -50,7 +50,7 @@ const WordContainer = () => {
         // console.log(wordId);
 
         try {
-            const res = await fetch(`http://localhost:5000/api/word/note/${wordId}`, {
+            const res = await fetch(`${BASE_URL}/api/word/note/${wordId}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -182,28 +182,28 @@ const WordContainer = () => {
     }
 
     return (
-        <div className="bg-white text-white p-6 sm:p-8 md:p-10 lg:p-12 flex flex-col items-center justify-center h-screen min-h-[120vh]  relative">
-            <div className="absolute flex flex-col sm:flex-row gap-8 top-5 text-blue-400 text-sm sm:text-sm lg:text-xl">
+        <div className="bg-[#6B7280]  text-[#1F2937] p-6 sm:p-8 md:p-10 lg:p-12 flex flex-col items-center justify-center h-screen min-h-[120vh]  relative">
+            <div className="absolute flex flex-col sm:flex-row gap-8 top-5 text-blue-400 text-sm  lg:text-base">
                 <button
                     onClick={handleClick}
-                    className="underline  hover:text-blue-700 focus:text-blue-700">
+                    className="underline  hover:text-blue-700 text-[#FFFFFF]">
                     Click  to check for words based on the difficulty you have chosen
                 </button>
                 <button
                     onClick={handleGeneralUser}
-                    className="underline  hover:text-blue-700 focus:text-blue-700">
+                    className="underline  hover:text-blue-700 text-[#FFFFFF]">
                     Click to check for words based on difficulty for general users
                 </button>
             </div>
 
             <div className="text-center max-w-4xl w-full min-h-[500px] sm:min-h-[400px] md:min-h-[500px] lg:min-h-[650px] 
-             bg-[#FAF8FF] flex items-center flex-col justify-center relative rounded-lg shadow-2xl border-none border p-2 ">
+             bg-[#1E1E2F]  flex items-center flex-col justify-center relative rounded-lg shadow-2xl border-none border p-2 ">
                 <div className="flex">
-                    <h1 className=" sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-10 text-orange-400 flex justify-center items-center">
+                    <h1 className=" sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-10 text-[#FFFFFF] flex justify-center items-center">
                         <span className="lg:text-5xl sm:text-2xl">({currentWordIndex + 1})</span> Word: {words[currentWordIndex].word}
                     </h1>
                     <button
-                        className="p-2 mb-7 text-orange-300"
+                        className="p-2 mb-7 text-[#FFFFFF]"
                         onClick={() => speak(words[currentWordIndex].word)}
                     >
                         <AiFillAudio className="text-2xl" />
@@ -214,11 +214,11 @@ const WordContainer = () => {
                 </p>
                 {active && (
                     <div className="flex flex-col justify-center items-center w-full py-3">
-                        <p className="text-lg sm:text-xl md:text-2xl mb-6 w-full sm:w-3/4 md:w-2/3 mx-auto text-gray-500">
-                            <span className="text-orange-500">Meaning:</span> {words[currentWordIndex].meaning}
+                        <p className="text-lg sm:text-xl md:text-2xl mb-6 w-full sm:w-3/4 md:w-2/3 mx-auto text-[#FFFFFF]">
+                            <span className="text-[#0D9488]">Meaning:</span> {words[currentWordIndex].meaning}
                         </p>
-                        <p className="text-lg sm:text-xl md:text-2xl mb-6 w-full sm:w-3/4 md:w-2/3 mx-auto text-gray-500">
-                            <span className="text-orange-500">Sentence:</span> {words[currentWordIndex].sentence}
+                        <p className="text-lg sm:text-xl md:text-2xl mb-6 w-full sm:w-3/4 md:w-2/3 mx-auto text-[#FFFFFF]">
+                            <span className="text-[#0D9488]">Sentence:</span> {words[currentWordIndex].sentence}
                         </p>
                     </div>
                 )}
@@ -226,18 +226,18 @@ const WordContainer = () => {
                 <div className="flex flex-col sm:flex-row justify-between w-2/3 sm:w-2/3 gap-2 sm:gap-2 mb-6 sm:m-6">
                     <button
                         onClick={handlePrevious}
-                        className="bg-orange-200 text-gray-600 font-semibold py-2 px-4 rounded-lg text-sm sm:text-base md:text-lg hover:bg-yellow-400 transition duration-300"
+                        className="bg-[#374151] text-[#FFFFFF] hover:bg-[#4B5563]  font-semibold py-2 px-4 rounded-lg text-sm sm:text-base md:text-lg transition duration-300"
                     >
                         Previous
                     </button>
                     <button
                         onClick={handleNext}
-                        className="bg-orange-200 text-gray-600 font-semibold py-2 px-4 rounded-lg text-sm sm:text-base md:text-lg hover:bg-yellow-400 transition duration-300"
+                        className="bg-[#374151] text-[#FFFFFF] hover:bg-[#4B5563]  font-semibold py-2 px-4 rounded-lg text-sm sm:text-base md:text-lg  transition duration-300"
                     >
                         Next
                     </button>
                     <button
-                        className="bg-orange-200 text-gray-600 font-semibold py-2 px-4 rounded-lg text-sm sm:text-base md:text-lg hover:bg-yellow-400 transition duration-300 w-full sm:w-auto"
+                        className="bg-[#374151] text-[#FFFFFF] hover:bg-[#4B5563]  font-semibold py-2 px-4 rounded-lg text-sm sm:text-base md:text-lg transition duration-300 w-full sm:w-auto"
                         onClick={handleStore}
                     >
                         I did not know this word
@@ -248,17 +248,17 @@ const WordContainer = () => {
                 <div className="absolute bottom-2 lg:bottom-4 sm:bottom-2 right-2 flex gap-8 ">
                     <button
                         onClick={() => handleDifficulty('easy')}
-                        className="bg-orange-100 text-gray-600 border-black font-medium py-1 px-4 rounded-lg hover:bg-orange-200 ">
+                        className="bg-[#374151] text-[#FFFFFF] hover:bg-[#4B5563]  border-black font-medium py-1 px-4 rounded-lg">
                         Easy
                     </button>
                     <button
                         onClick={() => handleDifficulty('medium')}
-                        className="bg-orange-100 text-gray-600 border-black font-medium py-1 px-4 rounded-lg hover:bg-orange-200">
+                        className="bg-[#374151] text-[#FFFFFF] hover:bg-[#4B5563]   border-black font-medium py-1 px-4 rounded-lg">
                         Medium
                     </button>
                     <button
                         onClick={() => handleDifficulty('hard')}
-                        className="bg-orange-100 text-gray-600 border-black font-medium py-1 px-4 rounded-lg hover:bg-orange-200">
+                        className="bg-[#374151] text-[#FFFFFF] hover:bg-[#4B5563]  border-black font-medium py-1 px-4 rounded-lg ">
                         Hard
                     </button>
                 </div>
@@ -273,7 +273,7 @@ const WordContainer = () => {
                 draggable
                 pauseOnHover />
 
-            <div className="absolute bottom-10 right-14 lg:top-10 lg:right-10 bg-white sm: flex sm:items-center">
+            <div className="absolute bottom-10 right-14 lg:top-10 lg:right-10  sm: flex sm:items-center">
                 <NoteBook
                     note={note}
                     setNote={setNote}

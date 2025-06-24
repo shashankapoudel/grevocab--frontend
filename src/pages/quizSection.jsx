@@ -79,7 +79,7 @@ const QuizSection = () => {
 
         const token = user.data.token;
         try {
-            const res = await fetch('http://localhost:5000/api/score/save-score', {
+            const res = await fetch(`${BASE_URL}/score/save-score`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -110,8 +110,8 @@ const QuizSection = () => {
     }, [showResults])
 
     return (
-        <div className="flex justify-center items-center w-full h-screen bg-white">
-            <div className={`flex justify-center items-center relative w-2/3 h-3/4 ${!showResults ? 'bg-[#FAF8FF] shadow-lg' : 'bg-white'}`}>
+        <div className="flex justify-center items-center w-full h-screen bg-[#6B7280]">
+            <div className={`flex justify-center items-center relative w-2/3 h-3/4 text-[#FFFFFF] ${!showResults ? 'bg-[#1E1E2F]  shadow-lg' : 'bg-white'}`}>
                 {quizQuestions.length > 0 && !showResults && (
                     <div>
                         <div className="absolute  left-4 top-4">
@@ -141,7 +141,7 @@ const QuizSection = () => {
                             <div className="mt-5 flex justify-center">
                                 <button
                                     onClick={handleNextQuestion}
-                                    className="px-4 py-2 bg-blue-500 text-white rounded-md"
+                                    className="px-4 py-2 bg-[#374151] text-[#FFFFFF] hover:bg-[#4B5563]    rounded-md"
                                 >
                                     Next Question
                                 </button>
@@ -152,11 +152,11 @@ const QuizSection = () => {
 
                 {showResults && (
                     <div className="bg-gray-100 flex flex-col justify-center items-center w-2/3 h-2/3 gap-10 shadow-md ">
-                        <h2 className="text-5xl text-start font-semibold mb-10">Quiz Finished!</h2>
-                        <p className="text-3xl">
+                        <h2 className="text-5xl text-start font-semibold mb-10 text-[#111111]">Quiz Finished!</h2>
+                        <p className="text-3xl text-[#111111]">
                             <span className="text-3xl font-semibold text-green-500">Your score</span>: {score} / {quizQuestions.length}
                         </p>
-                        <button onClick={handleRestartQuiz} className="text-2xl border border-black p-2 rounded-lg hover:text-blue-500 hover:border-blue-500">
+                        <button onClick={handleRestartQuiz} className="text-2xl border border-black p-2 rounded-lg bg-[#374151] text-[#FFFFFF] hover:bg-[#4B5563]    ">
                             Restart Quiz
                         </button>
                     </div>
