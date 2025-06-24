@@ -12,6 +12,7 @@ import PieTracker from '../components/pieTracker';
 import LineChart from '../components/lineChart';
 import StreakTracker from '../components/streakTrack';
 import Leaderboard from '../components/leaderboard';
+import BASE_URL from '../config/api';
 
 const ScoreTracker = () => {
     const [results, setResults] = useState([]);
@@ -27,7 +28,7 @@ const ScoreTracker = () => {
         const token = user.data.token;
 
         try {
-            const res = await fetch('http://localhost:5000/api/score/get-score', {
+            const res = await fetch(`${BASE_URL}/score/get-score`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',

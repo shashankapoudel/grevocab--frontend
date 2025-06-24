@@ -6,6 +6,7 @@ import { AiFillAudio } from "react-icons/ai";
 import NoteBook from "../components/NoteBook";
 import SearchWordonDifficulty from "./searchWordonDifficulty";
 import { Navigate, useNavigate } from "react-router-dom";
+import BASE_URL from "../config/api";
 
 const WordContainer = () => {
 
@@ -20,7 +21,7 @@ const WordContainer = () => {
     const getWords = async () => {
         const token = user.data.token;
         try {
-            const res = await fetch('http://localhost:5000/api/words/words', {
+            const res = await fetch(`${BASE_URL}/words/words`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',

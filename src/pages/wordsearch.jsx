@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import BASE_URL from '../config/api';
 
 const Wordsearch = () => {
     const [word, setWord] = useState('');
@@ -15,7 +16,7 @@ const Wordsearch = () => {
 
     const fetchWordData = async () => {
         try {
-            const res = await fetch(`http://localhost:5000/api/wordic?word=${word}`);
+            const res = await fetch(`${BASE_URL}/wordic?word=${word}`);
             const data = await res.json();
 
             if (res.ok) {

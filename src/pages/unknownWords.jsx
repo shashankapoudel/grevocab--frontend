@@ -1,6 +1,7 @@
 
 import { Table, Thead, Tbody, Tr, Th, Td, TableContainer } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
+import BASE_URL from '../config/api';
 
 const UnknownWords = () => {
     const [unknown, setUnknown] = useState([])
@@ -9,7 +10,7 @@ const UnknownWords = () => {
         const fetchUnknownWords = async () => {
             const token = user.data.token;
             try {
-                const res = await fetch('http://localhost:5000/api/words/unknown-words', {
+                const res = await fetch(`${BASE_URL}/users/words/unknown-words`, {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',

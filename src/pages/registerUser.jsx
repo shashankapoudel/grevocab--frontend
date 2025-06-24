@@ -4,6 +4,7 @@
 import { useToast } from "@chakra-ui/react";
 import { Controller, useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
+import BASE_URL from "../config/api";
 
 const RegisterUser = () => {
     const toast = useToast()
@@ -23,7 +24,7 @@ const RegisterUser = () => {
 
     const onSubmit = async (data) => {
         try {
-            const res = await fetch('http://localhost:5000/api/users/register', {
+            const res = await fetch(`${BASE_URL}/users/register`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -1,6 +1,7 @@
 
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom"; // To get the passed state
+import BASE_URL from "../config/api";
 
 const shuffleArray = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
@@ -28,7 +29,7 @@ const QuizSection = () => {
 
     const fetchQuiz = async () => {
         try {
-            const res = await fetch(`http://localhost:5000/api/quiz/quizq?limit=${questionLimit}`);
+            const res = await fetch(`${BASE_URL}/quiz/quizq?limit=${questionLimit}`);
             const data = await res.json();
             setQuizQuestions(data.data);
             setShuffledChoices(shuffleArray(data.data[0].choices)); // Shuffle the first question choices

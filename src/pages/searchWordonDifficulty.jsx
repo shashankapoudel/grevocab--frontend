@@ -3,6 +3,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import BASE_URL from '../config/api';
 
 const SearchWordonDifficulty = () => {
     const [wordDifficulty, setWordDifficulty] = useState('');
@@ -17,7 +18,7 @@ const SearchWordonDifficulty = () => {
         setWordDifficulty(selectedDifficulty)
         const token = user.data.token;
         try {
-            const res = await fetch('http://localhost:5000/api/word/difficult-word', {
+            const res = await fetch(`${BASE_URL}/word/difficult-word`, {
                 method: 'GET',
                 headers: {
                     "Content-Type": "application/json",
