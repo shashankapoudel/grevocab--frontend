@@ -17,8 +17,8 @@ const QuizStartPage = () => {
     };
 
     return (
-        <div className="flex flex-col justify-center items-center h-screen w-full bg-[#FAF8FF] ">
-            <div className="grid grid-cols-1 justify-between text-center items-center w-2/3 md:w-1/2 sm:w-full h-1/2  bg-white shadow-lg rounded-lg p-3">
+        <div className="flex flex-col justify-center items-center h-screen w-full bg-[#F7F7F9]   ">
+            <div className="grid grid-cols-1 justify-between text-center items-center w-2/3 md:w-1/2 sm:w-full h-1/2  bg-[#FFFFFF] shadow-lg rounded-lg p-3">
                 <div>
                     <h1 data-testid="cypress-title" className="font-semibold lg:text-5xl sm:text-4xl lg:mt-9 sm:-mt-5">Are you ready to start?</h1>
                 </div>

@@ -182,28 +182,28 @@ const WordContainer = () => {
     }
 
     return (
-        <div className="bg-[#6B7280]  text-[#1F2937] p-4  md:p-8 flex flex-col items-center justify-between min-h-screen tracking-wide">
+        <div className="bg-[#F7F7F9]  text-[#1F2937] p-4  md:p-8 flex flex-col items-center justify-between min-h-screen tracking-wide">
 
             <div className="flex flex-col md:flex-row gap-8 top-5 text-blue-400 text-sm  lg:text-base">
                 <button
                     onClick={handleClick}
-                    className="underline  hover:text-blue-700 text-[#FFFFFF]">
+                    className="underline  hover:text-blue-700 text-[#374151] ">
                     Click  to check for words based on the difficulty you have chosen
                 </button>
                 <button
                     onClick={handleGeneralUser}
-                    className="underline  hover:text-blue-700 text-[#FFFFFF]">
+                    className="underline  hover:text-blue-700 text-[#374151] ">
                     Click to check for words based on difficulty for general users
                 </button>
             </div>
 
-            <div className="text-center max-w-4xl w-full h-2/3 bg-[#1E1E2F]  flex items-center flex-col justify-center rounded-lg shadow-2xl border-none border p-2 mt-4">
+            <div className="text-center max-w-4xl w-full h-2/3 bg-[#FFFFFF]  flex items-center flex-col justify-center rounded-lg shadow-2xl border-none border p-6 mt-4 ">
                 <div className="flex">
-                    <h1 className=" text-2xl md:text-3xl lg:text-4xl font-bold mb-10 text-[#FFFFFF] flex justify-center items-center">
+                    <h1 className=" text-2xl md:text-3xl lg:text-4xl font-bold mb-10 text-[#374151] flex justify-center items-center">
                         <span className="lg:text-3xl text-2xl">({currentWordIndex + 1})</span> Word: {words[currentWordIndex].word}
                     </h1>
                     <button
-                        className="p-2 mb-7 text-[#FFFFFF]"
+                        className="p-2 mb-7 text-[#374151]"
                         onClick={() => speak(words[currentWordIndex].word)}
                     >
                         <AiFillAudio className="text-2xl" />
@@ -213,12 +213,12 @@ const WordContainer = () => {
                     {active ? 'Hide meaning and sentence' : 'Show meaning and sentence'}
                 </p>
                 {active && (
-                    <div className="flex flex-col justify-center items-center w-full py-3">
-                        <p className="text-base md:text-2xl mb-6 w-full text-[#FFFFFF]">
-                            <span className="text-[#0D9488]">Meaning:</span> {words[currentWordIndex].meaning}
+                    <div className="flex flex-col w-full p-3">
+                        <p className="text-base md:text-2xl mb-6 w-full text-[#374151] text-center">
+                            <span className="text-[#374151] font-semibold">Meaning:</span> {words[currentWordIndex].meaning}
                         </p>
-                        <p className="text-base md:text-2xl mb-6 w-full text-[#FFFFFF]">
-                            <span className="text-[#0D9488]">Sentence:</span> {words[currentWordIndex].sentence}
+                        <p className="text-base text-center md:text-2xl mb-6 w-full text-[#374151]">
+                            <span className="text-[#374151] font-semibold">Sentence:</span> {words[currentWordIndex].sentence}
                         </p>
                     </div>
                 )}

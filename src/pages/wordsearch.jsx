@@ -66,12 +66,12 @@ const Wordsearch = () => {
 
                 <div className="mx-4 mt-10 py-2 gap-2">
                     {error && <p className="text-red-500">{error}</p>}
-                    {wordData ? (
-                        <div className='flex flex-col items-center '>
+                    {wordData && (
+                        <div className='flex flex-col items-center justify-center '>
                             <div className='flex flex-col gap-3'>
                                 <h2 className="text-4xl font-semibold text-center capitalize">{wordData.word}</h2>
-                                <p className='text-base'><strong>Meaning:</strong> {wordData.meaning}</p>
-                                <p className='text-base'><strong>Example:</strong> {wordData.example}</p>
+                                <p className='text-base text-center'><strong>Meaning:</strong> {wordData.meaning}</p>
+                                <p className='text-base text-center'><strong>Example:</strong> {wordData.example}</p>
                             </div>
                             <button
                                 className="bg-[#374151] text-[#FFFFFF] hover:bg-[#4B5563] p-2 mt-4"
@@ -80,12 +80,16 @@ const Wordsearch = () => {
                                 Hear Pronunciation
                             </button>
                         </div>
-                    ) : (
-                        <p>No word found. Try searching for another word.</p>
                     )}
+
+                    {!wordData &&
+
+                        < p > Try searching for  word.</p>
+                    }
+
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

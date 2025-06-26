@@ -110,7 +110,7 @@ const QuizSection = () => {
     }, [showResults])
 
     return (
-        <div className="flex justify-center items-center w-full h-screen bg-[#6B7280]">
+        <div className="flex justify-center items-center w-full h-screen bg-[#F7F7F9] ">
             <div className={`flex justify-center items-center relative w-2/3 h-3/4 text-[#FFFFFF] ${!showResults ? 'bg-[#1E1E2F]  shadow-lg' : 'bg-white'}`}>
                 {quizQuestions.length > 0 && !showResults && (
                     <div>
