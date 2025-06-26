@@ -15,7 +15,7 @@ import ImproveVocab from "./pages/improveVocab";
 import LeaderTable from "./pages/leaderTable";
 import SearchWordonDifficulty from "./pages/searchWordonDifficulty";
 import SearchWordOnUserDifficulty from "./pages/searchWordOnUserDifficulty";
-import LandingPage from "./pages/landingPage";
+import LandingPage from "./pages/LandingPage";
 import Header from "./components/Header";
 import PrivateRoute from "./components/PrivateRoute";
 
