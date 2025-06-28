@@ -2,17 +2,15 @@ import React from 'react'
 
 const LandingPage = () => {
     return (
-        <div className='w-full p-24 min-h-screen text-[#111111] bg-[#F7F7F9] '>
+        <div className='w-full p-4 lg:p-24 min-h-screen text-[#111111] bg-[#F7F7F9] '>
 
 
-            <div className='flex w-full items-center justify-center '>
+            <div className='flex flex-col lg:flex-row w-full items-center justify-center '>
 
-                <div className='w-full lg:w-1/2 flex flex-col p-10 gap-2'>
-
-                    <h1 className='text-2xl text-start text-[#111111] font-medium'>Prepare with top quality materials</h1>
-
+                <div className='w-full lg:w-1/2 flex flex-col p-2 lg:p-10 gap-2'>
+                    <h1 className='text-xl lg:text-2xl text-start text-[#111111] font-medium'>Prepare with top quality materials</h1>
                     <p
-                        className='text-gray-600 leading-relaxed tracking-wide'
+                        className='text-gray-600 leading-relaxed tracking-wide text-base'
                     >
                         We’re here to help you master GRE vocabulary faster and smarter. With our app, you’ll always study with high-impact, handpicked words based on real student learning patterns. We don’t overwhelm you — we make every word and quiz count.
                         <br />
@@ -21,9 +19,9 @@ const LandingPage = () => {
                     </p>
                 </div>
 
-                <div className='w-full lg:w-1/2 p-6 '>
+                <div className='w-full lg:w-1/2 p-2 lg:p-6 '>
                     <img
-                        className='object-cover rounded-lg '
+                        className='object-cover rounded-lg'
                         src='/Images/LandingPage/1.png'
                     />
                 </div>
@@ -31,14 +29,14 @@ const LandingPage = () => {
             </div>
 
 
-            <div className=' w-full flex flex-col justify-center items-center mt-8'>
+            <div className=' w-full  justify-center items-center mt-8'>
 
-                <h1 className='w-full text-center border-b text-4xl font-bold p-5'>What you will love most about our app: </h1>
+                <h1 className='w-full text-center border-b text-2xl lg:text-4xl font-bold p-5'>What you will love most about our app: </h1>
 
-                <div className='w-full flex mt-8 gap-12 border-b'>
 
-                    <div className='w-full lg:w-1/2 p-10 flex flex-col gap-2'>
+                <div className='w-full flex flex-col lg:flex-row mt-8 gap-12 border-b'>
 
+                    <div className='w-full lg:w-1/2 p-2 lg:p-10 flex flex-col gap-2'>
                         <h1 className='text-xl text-start text-[#111111] font-medium'>📖 Learn Words One at a Time — with Context & Control</h1>
                         <p className='text-gray-600 leading-relaxed tracking-wide'>
                             Our word learning interface is designed to help you focus on one GRE word at a time. You’ll see the word along with an option to:
@@ -62,16 +60,15 @@ const LandingPage = () => {
                     <div className='w-full lg:w-1/2 flex items-center '>
                         <img
                             src='/Images/LandingPage/3.png'
-
+                            className='object-cover rounded-lg'
                         />
                     </div>
                 </div>
 
 
-                <div className='w-full flex mt-8 gap-12 border-b'>
+                <div className='w-full flex flex-col lg:flex-row mt-8 gap-12 border-b'>
 
-                    <div className='w-full lg:w-1/2 p-10 flex flex-col gap-2'>
-
+                    <div className='w-full lg:w-1/2 p-2 lg:p-10 flex flex-col gap-2'>
                         <h1 className='text-xl text-start text-[#111111] font-medium'>Difficulty Levels That Reflect You — and Everyone Else</h1>
                         <p className='text-gray-600 leading-relaxed tracking-wide'>
                             👥 Tag words your way — and see how others do too.
@@ -89,10 +86,9 @@ const LandingPage = () => {
                     </div>
                 </div>
 
-                <div className='w-full flex mt-8 gap-12 border-b'>
+                <div className='w-full flex flex-col lg:flex-row mt-8 gap-4 lg:gap-12 border-b'>
 
-                    <div className='w-full lg:w-1/2 p-10 flex flex-col gap-2'>
-
+                    <div className='w-full lg:w-1/2 p-2 lg:p-10 flex flex-col gap-2'>
                         <h1 className='text-xl text-start text-[#111111] font-medium'> 🧠 Test Yourself — On Your Terms</h1>
                         <p className='text-gray-600 leading-relaxed tracking-wide'>
 
@@ -101,37 +97,31 @@ const LandingPage = () => {
                             <br />
                             <br />
                             Once you start, you'll face randomly selected questions based on real GRE-level words. It’s a fun, flexible way to reinforce learning and track your progress over time.
-
-
                         </p>
                     </div>
 
-                    <div className="w-full lg:w-1/2  relative">
-
+                    <div className="w-full lg:w-1/2 relative">
                         <img
                             className="object-cover w-80 h-56 "
                             src="/Images/LandingPage/5.png"
                             alt="Image 2"
                         />
                         <img
-                            className="object-cover w-80 h-48 absolute top-1/4 right-8"
+                            className="object-cover w-80 h-48 absolute top-3/4 lg:top-1/4 right-0 lg:right-8"
                             src="/Images/LandingPage/6.png"
                             alt="Image 1"
                         />
                     </div>
-
                 </div>
 
-                <div className='w-full flex mt-8 gap-12 items-center justify-center border-b'>
 
-                    <div className='w-full lg:w-1/2 p-10 flex flex-col gap-2'>
+                <div className='w-full flex flex-col lg:flex-row mt-44 lg:mt-8 gap-12 items-center justify-center border-b'>
 
+                    <div className='w-full lg:w-1/2 p-2 lg:p-10 flex flex-col gap-2'>
                         <h1 className='text-xl text-start text-[#111111] font-medium'>
                             📊 Track Your Progress Visually
                         </h1>
                         <p className='text-gray-600 leading-relaxed tracking-wide'>
-
-
                             After each quiz, your performance is instantly analyzed and displayed through interactive charts and graphs:<br />
 
                             📈 <strong>Line graph</strong> shows how your scores evolve over time .<br />
@@ -144,7 +134,6 @@ const LandingPage = () => {
 
                             Plus, with just a click, you can explore <strong>recommended study materials</strong>  tailored to your current score level.
                             <br />
-
                         </p>
                     </div>
 
@@ -158,8 +147,8 @@ const LandingPage = () => {
 
 
 
-                <div className='w-full flex mt-4 gap-12 items-center justify-center border-b'>
-                    <div className='w-full lg:w-1/2 p-4 flex flex-col gap-2'>
+                <div className='w-full flex flex-col lg:flex-row mt-4 gap-12 items-center justify-center border-b'>
+                    <div className='w-full lg:w-1/2 p-2 lg:p-4 flex flex-col gap-2'>
                         <h1 className='text-xl text-start text-[#111111] font-medium'>
                             📚 Built-in Dictionary — Look Up, Learn, and Listen
                         </h1>
@@ -175,7 +164,7 @@ const LandingPage = () => {
                         </p>
                     </div>
 
-                    <div className='w-full lg:w-1/2 p-16 '>
+                    <div className='w-full lg:w-1/2 p-2 lg:p-16 '>
                         <img
                             src='/Images/LandingPage/7.png'
 
