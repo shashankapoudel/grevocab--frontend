@@ -32,7 +32,7 @@ const UnknownWords = () => {
     console.log(unknown)
 
     return (
-        <div className='m-20'>
+        <div className='p-4 lg:p-8 w-full'>
 
             {
                 unknown.length === 0 ? (
@@ -43,9 +43,9 @@ const UnknownWords = () => {
                         <Table className="table-auto w-full border-separate" style={{ borderSpacing: 0 }}>
                             <Thead>
                                 <Tr className='bg-[#0056D10D]'>
-                                    <Th className='text-black text-center border-r p-3'>S.N</Th>
-                                    <Th className="text-black text-center border-r p-3">Words</Th>
-                                    <Th className="text-black text-center border-r p-3">Meaning</Th>
+                                    <Th className='text-black text-center border-r p-3 '>S.N</Th>
+                                    <Th className="text-black text-center border-r p-1">Words</Th>
+                                    <Th className="text-black text-center border-r p-1 ">Meaning</Th>
                                     <Th className="text-black text-center p-3">Sentence</Th>
                                 </Tr>
                             </Thead>
@@ -56,8 +56,8 @@ const UnknownWords = () => {
                                     <Tr className="bg-white shadow-md rounded-lg" key={index}>
                                         <Td className="p-4 text-left border-r">{index + 1}</Td>
                                         <Td className="p-4 text-left border-r">{word.word}</Td>
-                                        <Td className="p-4 text-left border-r break-words whitespace-normal leading-relaxed">{word.meaning}</Td>
-                                        <Td className="p-4 text-left break-words whitespace-normal leading-relaxed">
+                                        <Td className="p-4 text-left">{word.meaning}</Td>
+                                        <Td className="p-4 text-left">
                                             {word.sentence}
                                         </Td>
                                     </Tr>

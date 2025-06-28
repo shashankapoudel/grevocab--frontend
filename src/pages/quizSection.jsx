@@ -110,16 +110,17 @@ const QuizSection = () => {
     }, [showResults])
 
     return (
-        <div className="flex justify-center items-center w-full h-screen bg-[#F7F7F9] ">
-            <div className={`flex justify-center items-center relative w-2/3 h-3/4 text-[#FFFFFF] ${!showResults ? 'bg-[#1E1E2F]  shadow-lg' : 'bg-white'}`}>
+        <div className="flex justify-center items-center w-full min-h-screen bg-[#F7F7F9] p-2">
+
+            <div className={`flex min-h-screen justify-center items-center relative w-full p-2 lg:w-2/3 text-[#FFFFFF] ${!showResults ? 'bg-[#1E1E2F]  shadow-lg' : 'bg-white'}`}>
                 {quizQuestions.length > 0 && !showResults && (
                     <div>
-                        <div className="absolute  left-4 top-4">
+                        <div className="absolute  left-2 top-1 text-sm">
                             <span > Question {currentQuestionIndex + 1} of {questionLimit} </span>
                         </div>
 
                         <div className="flex justify-center items-center">
-                            <h2 className="text-center text-red-500 font-semibold text-3xl">
+                            <h2 className="text-center text-red-500 font-semibold text-xl md:text-2xl lg:text-3xl">
                                 {quizQuestions[currentQuestionIndex].question}
                             </h2>
                         </div>
@@ -128,7 +129,7 @@ const QuizSection = () => {
                                 <button
                                     key={index}
                                     onClick={() => handleAnswerClick(choice)}
-                                    className={`border border-gray-300 px-4 py-3 text-lg hover:border-blue-500
+                                    className={`border border-gray-300 px-4 py-3 text-base lg:text-lg hover:border-blue-500
                                     ${answered && choice === quizQuestions[currentQuestionIndex].correctAnswer ? 'bg-green-600 text-white' : ''} 
                                     ${answered && choice === selectedAnswer && choice !== quizQuestions[currentQuestionIndex].correctAnswer ? 'bg-red-500 text-white' : ''}`}
                                     disabled={answered}
@@ -151,8 +152,8 @@ const QuizSection = () => {
                 )}
 
                 {showResults && (
-                    <div className="bg-gray-100 flex flex-col justify-center items-center w-2/3 h-2/3 gap-10 shadow-md ">
-                        <h2 className="text-5xl text-start font-semibold mb-10 text-[#111111]">Quiz Finished!</h2>
+                    <div className="bg-gray-100 flex flex-col justify-center items-center w-full lg:w-2/3 gap-10 shadow-md p-4 ">
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl text-start font-semibold  text-[#111111] mb-4">Quiz Finished!</h2>
                         <p className="text-3xl text-[#111111]">
                             <span className="text-3xl font-semibold text-green-500">Your score</span>: {score} / {quizQuestions.length}
                         </p>

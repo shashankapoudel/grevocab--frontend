@@ -10,7 +10,7 @@ const LineGraph = ({ results, setResults }) => {
     }));
 
     return (
-        <div className="mt-32">
+        <div className="mt-8 lg:mt-32 flex flex-col items-center justify-center">
             <h2 className="text-2xl font-bold text-center mb-5">Score Progress Over Time</h2>
             <ResponsiveContainer width="100%" height={400}>
                 <LineChart data={chartData}>

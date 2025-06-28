@@ -77,8 +77,8 @@ const PieTracker = ({ results, setResults }) => {
 
 
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2  p-5 gap-5 mt-32'>
-      <div className=" p-5 rounded-lg mb-5   ">
+    <div className='grid grid-cols-1 md:grid-cols-2  p-2 lg:p-5 gap-5 mt-8 lg:mt-32'>
+      <div className="p-2 lg:p-5 rounded-lg mb-5   ">
         <h2 className="text-xl font-semibold mb-2">Score Analysis</h2>
         <p className='text-xl'><strong>Total Score:</strong> {totalScore}</p>
         <p className='text-xl'><strong>Total Full Marks:</strong> {totalFullMark}</p>

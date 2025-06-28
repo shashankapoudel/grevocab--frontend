@@ -44,10 +44,10 @@ const Wordsearch = () => {
     };
 
     return (
-        <div className="flex flex-col  justify-center items-center w-full h-screen bg-[#6B7280]">
-            <div className='bg-[#1E1E2F] text-[#FFFFFF] w-1/2 h-2/3 flex flex-col justify-center items-center p-2'>
+        <div className="flex flex-col  justify-center items-center w-full min-h-screen bg-[#6B7280] p-2 md:p-4">
+            <div className='bg-[#1E1E2F] text-[#FFFFFF] w-full lg:w-1/2 min-h-screen md:min-h-96 h-full flex flex-col justify-center items-center p-2 rounded-md'>
 
-                <h1 className="text-2xl font-bold mb-4">Search for a Word</h1>
+                <h1 className="text-2xl md:text-3xl lg:text-2xl lg:tect font-bold mb-4">Search for a Word</h1>
                 <div className="flex flex-col sm:flex-row gap-4 items-center w-full sm:w-auto">
                     <input
                         type="text"

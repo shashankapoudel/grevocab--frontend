@@ -17,13 +17,14 @@ const QuizStartPage = () => {
     };
 
     return (
-        <div className="flex flex-col justify-center items-center h-screen w-full bg-[#F7F7F9]   ">
-            <div className="grid grid-cols-1 justify-between text-center items-center w-2/3 md:w-1/2 sm:w-full h-1/2  bg-[#FFFFFF] shadow-lg rounded-lg p-3">
+        <div className="flex flex-col justify-center items-center min-h-screen w-full bg-[#F7F7F9] p-2  ">
+
+            <div className="grid grid-cols-1 justify-center text-center items-center w-full lg:w-2/3  bg-[#FFFFFF] shadow-lg rounded-lg p-8 gap-6">
                 <div>
-                    <h1 data-testid="cypress-title" className="font-semibold lg:text-5xl sm:text-4xl lg:mt-9 sm:-mt-5">Are you ready to start?</h1>
+                    <h1 data-testid="cypress-title" className="font-semibold lg:text-5xl text-3xl lg:mt-9 sm:-mt-5">Are you ready to start?</h1>
                 </div>
-                <div className="flex justify-center items-center">
-                    <label htmlFor="questionLimit" className="mr-3 lg:text-2xl sm:text-xl ">Select the number of questions you want to face</label>
+                <div className="flex flex-col lg:flex-row justify-center items-center">
+                    <label htmlFor="questionLimit" className="lg:text-2xl text-base ">Select the number of questions you want to face</label>
                     <select
                         id="questionLimit"
                         value={questionLimit}

@@ -63,7 +63,7 @@ const ScoreTracker = () => {
     const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
     return (
-        <div className="grid grid-cols-1 gap-32 bg-[#F7F7F9] p-20   ">
+        <div className="grid grid-cols-1 gap-32 bg-[#F7F7F9] p-4 lg:p-20">
             {results.length === 0 ? (
                 <p className="text-center text-red-600 text-xl">
                     You must play a quiz first to track your results.
@@ -130,7 +130,7 @@ const ScoreTracker = () => {
                         )}
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-10 bg-[#F7F7F9] ">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 bg-[#F7F7F9] items-center justify-center ">
                         <Leaderboard />
                         <StreakTracker />
                         <LineChart results={results} />
