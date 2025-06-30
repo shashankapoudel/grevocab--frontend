@@ -2,13 +2,13 @@ import React from 'react'
 
 const LandingPage = () => {
     return (
-        <div className='w-full p-4 lg:p-24 min-h-screen text-[#111111] bg-[#F7F7F9] '>
+        <div className='w-full p-4 lg:p-24 min-h-screen text-[#111111] bg-[#F7F7F9] dark:bg-gray-900 dark:text-white '>
 
 
             <div className='flex flex-col lg:flex-row w-full items-center justify-center '>
 
                 <div className='w-full lg:w-1/2 flex flex-col p-2 lg:p-10 gap-2'>
-                    <h1 className='text-xl lg:text-2xl text-start text-[#111111] font-medium'>Prepare with top quality materials</h1>
+                    <h1 className='text-xl lg:text-2xl text-start text-[#111111] dark:text-white font-medium'>Prepare with top quality materials</h1>
                     <p
                         className='text-gray-600 leading-relaxed tracking-wide text-base'
                     >
@@ -31,13 +31,13 @@ const LandingPage = () => {
 
             <div className=' w-full  justify-center items-center mt-8'>
 
-                <h1 className='w-full text-center border-b text-2xl lg:text-4xl font-bold p-5'>What you will love most about our app: </h1>
+                <h1 className='w-full text-center border-b text-2xl lg:text-4xl font-bold p-5 dark:text-white'>What you will love most about our app: </h1>
 
 
                 <div className='w-full flex flex-col lg:flex-row mt-8 gap-12 border-b'>
 
                     <div className='w-full lg:w-1/2 p-2 lg:p-10 flex flex-col gap-2'>
-                        <h1 className='text-xl text-start text-[#111111] font-medium'>📖 Learn Words One at a Time — with Context & Control</h1>
+                        <h1 className='text-xl text-start text-[#111111] font-medium dark:text-white'>📖 Learn Words One at a Time — with Context & Control</h1>
                         <p className='text-gray-600 leading-relaxed tracking-wide'>
                             Our word learning interface is designed to help you focus on one GRE word at a time. You’ll see the word along with an option to:
                             <br />
@@ -69,7 +69,7 @@ const LandingPage = () => {
                 <div className='w-full flex flex-col lg:flex-row mt-8 gap-12 border-b'>
 
                     <div className='w-full lg:w-1/2 p-2 lg:p-10 flex flex-col gap-2'>
-                        <h1 className='text-xl text-start text-[#111111] font-medium'>Difficulty Levels That Reflect You — and Everyone Else</h1>
+                        <h1 className='text-xl text-start text-[#111111] font-medium dark:text-white'>Difficulty Levels That Reflect You — and Everyone Else</h1>
                         <p className='text-gray-600 leading-relaxed tracking-wide'>
                             👥 Tag words your way — and see how others do too.
                             <br />
@@ -89,7 +89,7 @@ const LandingPage = () => {
                 <div className='w-full flex flex-col lg:flex-row mt-8 gap-4 lg:gap-12 border-b'>
 
                     <div className='w-full lg:w-1/2 p-2 lg:p-10 flex flex-col gap-2'>
-                        <h1 className='text-xl text-start text-[#111111] font-medium'> 🧠 Test Yourself — On Your Terms</h1>
+                        <h1 className='text-xl text-start text-[#111111] font-medium dark:text-white'> 🧠 Test Yourself — On Your Terms</h1>
                         <p className='text-gray-600 leading-relaxed tracking-wide'>
 
                             Ready to challenge your vocab knowledge?<br />
@@ -118,7 +118,7 @@ const LandingPage = () => {
                 <div className='w-full flex flex-col lg:flex-row mt-44 lg:mt-8 gap-12 items-center justify-center border-b'>
 
                     <div className='w-full lg:w-1/2 p-2 lg:p-10 flex flex-col gap-2'>
-                        <h1 className='text-xl text-start text-[#111111] font-medium'>
+                        <h1 className='text-xl text-start text-[#111111] font-medium dark:text-white'>
                             📊 Track Your Progress Visually
                         </h1>
                         <p className='text-gray-600 leading-relaxed tracking-wide'>
@@ -149,7 +149,7 @@ const LandingPage = () => {
 
                 <div className='w-full flex flex-col lg:flex-row mt-4 gap-12 items-center justify-center border-b'>
                     <div className='w-full lg:w-1/2 p-2 lg:p-4 flex flex-col gap-2'>
-                        <h1 className='text-xl text-start text-[#111111] font-medium'>
+                        <h1 className='text-xl text-start text-[#111111] font-medium dark:text-white'>
                             📚 Built-in Dictionary — Look Up, Learn, and Listen
                         </h1>
                         <p className='text-gray-600 leading-relaxed tracking-wide'>

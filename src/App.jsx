@@ -25,6 +25,13 @@ function App() {
   const location = useLocation();
   const [user, setUser] = useState(null);
 
+  const [darkMode, setDarkMode] = useState(() => {
+    if (typeof window !== "undefined") {
+      return localStorage.getItem("darkMode") === "true";
+    }
+    return false;
+  });
+
   useEffect(() => {
     const storedUser = localStorage.getItem("userInfo");
     if (storedUser) {
@@ -32,11 +39,28 @@ function App() {
     }
   }, []);
 
+
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("darkMode", "true");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("darkMode", "false");
+    }
+  }, [darkMode]);
+
+
   return (
 
     <div>
       {!["/login", "/register"].includes(location.pathname) && (
-        <Header user={user} setUser={setUser} />
+        <Header
+          user={user}
+          setUser={setUser}
+          darkMode={darkMode}
+          setDarkMode={setDarkMode}
+        />
       )}
 
       <Routes>
