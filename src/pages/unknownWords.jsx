@@ -32,7 +32,7 @@ const UnknownWords = () => {
     console.log(unknown)
 
     return (
-        <div className='p-4 lg:p-8 w-full'>
+        <div className='p-4 lg:p-8 w-full '>
 
             {
                 unknown.length === 0 ? (
@@ -42,11 +42,11 @@ const UnknownWords = () => {
                     < TableContainer >
                         <Table className="table-auto w-full border-separate" style={{ borderSpacing: 0 }}>
                             <Thead>
-                                <Tr className='bg-[#0056D10D]'>
-                                    <Th className='text-black text-center border-r p-3 '>S.N</Th>
-                                    <Th className="text-black text-center border-r p-1">Words</Th>
-                                    <Th className="text-black text-center border-r p-1 ">Meaning</Th>
-                                    <Th className="text-black text-center p-3">Sentence</Th>
+                                <Tr className='bg-[#0056D10D] dark:text-white'>
+                                    <Th className='text-black text-center border-r p-3 dark:text-white'>S.N</Th>
+                                    <Th className="text-black text-center border-r p-1 dark:text-white">Words</Th>
+                                    <Th className="text-black text-center border-r p-1 dark:text-white ">Meaning</Th>
+                                    <Th className="text-black text-center p-3 dark:text-white">Sentence</Th>
                                 </Tr>
                             </Thead>
                             <Tbody className="space-y-4">

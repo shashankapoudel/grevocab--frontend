@@ -2,13 +2,13 @@ import React from 'react'
 
 const LandingPage = () => {
     return (
-        <div className='w-full p-4 lg:p-24 min-h-screen text-[#111111] bg-[#F7F7F9] dark:bg-gray-900 dark:text-white '>
+        <div className='w-full p-4 lg:p-24 min-h-screen text-[#111111] bg-[#F7F7F9] dark:bg-gray-900 dark:text-[#FFFFFF] '>
 
 
             <div className='flex flex-col lg:flex-row w-full items-center justify-center '>
 
                 <div className='w-full lg:w-1/2 flex flex-col p-2 lg:p-10 gap-2'>
-                    <h1 className='text-xl lg:text-2xl text-start text-[#111111] dark:text-white font-medium'>Prepare with top quality materials</h1>
+                    <h1 className='text-xl lg:text-2xl text-start text-[#111111] dark:text-[#FFFFFF] font-medium'>Prepare with top quality materials</h1>
                     <p
                         className='text-gray-600 leading-relaxed tracking-wide text-base'
                     >

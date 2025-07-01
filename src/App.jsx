@@ -53,7 +53,8 @@ function App() {
 
   return (
 
-    <div>
+    <div className="min-h-screen bg-white text-black dark:bg-gray-700  transition-colors duration-500">
+
       {!["/login", "/register"].includes(location.pathname) && (
         <Header
           user={user}
