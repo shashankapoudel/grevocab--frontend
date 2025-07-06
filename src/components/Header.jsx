@@ -146,10 +146,10 @@ const Header = ({ setUser, user, darkMode, setDarkMode }) => {
 
       const data = await res.json();
 
-      
+
       setSubscribed(data.user.subscribedForDailyEmail);
 
-      
+
       const updatedUserInfo = {
         ...user,
         data: {
@@ -200,7 +200,7 @@ const Header = ({ setUser, user, darkMode, setDarkMode }) => {
             <button
               onClick={handleSubscribe}
               className="border border-gray-300 rounded-lg py-1 px-3 text-white hover:border-pink-200 hover:text-pink-200 cursor-pointer"
-              title="Subscribe to get daily GRE word notification on your email address"
+              title={subscribed ? "UnSubscribe to not get daily GRE word notification on your email address" : "Subscribe to get daily GRE word notification on your email address"}
             >
               {subscribed ? "Unsubscribe" : "Subscribe"}
             </button>
@@ -215,7 +215,7 @@ const Header = ({ setUser, user, darkMode, setDarkMode }) => {
           </div>
         )}
       </div>
-    </div>
+    </div >
   );
 };
 
