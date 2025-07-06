@@ -18,6 +18,8 @@ import SearchWordOnUserDifficulty from "./pages/searchWordOnUserDifficulty";
 import LandingPage from "./pages/LandingPage";
 import Header from "./components/Header";
 import PrivateRoute from "./components/PrivateRoute";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -187,7 +189,7 @@ function App() {
           element={<h1 className="text-center mt-20 text-xl font-semibold">404 - Page Not Found</h1>}
         />
       </Routes>
-
+      <ToastContainer position="top-right" autoClose={3000} />
     </div>
 
   );
