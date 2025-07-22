@@ -37,21 +37,21 @@ const LandingPage = () => {
                 <div className='w-full flex flex-col lg:flex-row mt-8 gap-12 border-b'>
 
                     <div className='w-full lg:w-1/2 p-2 lg:p-10 flex flex-col gap-2'>
-                        <h1 className='text-xl text-start text-[#111111] font-medium dark:text-white'>📖 Learn Words One at a Time — with Context & Control</h1>
+                        <h1 className='text-xl text-center text-[#111111] font-medium dark:text-white'> Learn Words One at a Time — with Context & Control</h1>
                         <p className='text-gray-600 leading-relaxed tracking-wide'>
                             Our word learning interface is designed to help you focus on one GRE word at a time. You’ll see the word along with an option to:
                             <br />
-                            🔊 Listen to<strong> pronunciation</strong>
+                            1. Listen to<strong> pronunciation</strong>
                             <br />
-                            📘 Reveal its <strong>meaning and usage sentence</strong>
+                            2. Reveal its <strong>meaning and usage sentence</strong>
                             <br />
-                            ❓ Mark <strong>“I did not know this word” </strong>to track unknown(difficult) words
+                            3. Mark <strong>“I did not know this word” </strong>to track unknown(difficult) words
                             <br />
-                            ✅ Tag the word as<strong> Easy, Medium, or Hard </strong>based on your understanding
+                            4. Tag the word as<strong> Easy, Medium, or Hard </strong>based on your understanding
                             <br />
                             You can navigate through words at your own pace with Previous and Next buttons.
                             <br />
-                            ✍️ Want to remember something specific?
+                            5. Want to remember something specific?
                             <br />
                             Add<strong> personal notes </strong>for each word to build your own custom study guide.
                         </p>
@@ -71,7 +71,7 @@ const LandingPage = () => {
                     <div className='w-full lg:w-1/2 p-2 lg:p-10 flex flex-col gap-2'>
                         <h1 className='text-xl text-start text-[#111111] font-medium dark:text-white'>Difficulty Levels That Reflect You — and Everyone Else</h1>
                         <p className='text-gray-600 leading-relaxed tracking-wide'>
-                            👥 Tag words your way — and see how others do too.
+                            Tag words your way — and see how others do too.
                             <br />
 
                             Categorize each word as <strong>Easy, Medium,</strong> or <strong>Hard</strong> based on your understanding, and explore how other users have rated the same word to gain new perspective and compare difficulty levels.
@@ -89,7 +89,7 @@ const LandingPage = () => {
                 <div className='w-full flex flex-col lg:flex-row mt-8 gap-4 lg:gap-12 border-b'>
 
                     <div className='w-full lg:w-1/2 p-2 lg:p-10 flex flex-col gap-2'>
-                        <h1 className='text-xl text-start text-[#111111] font-medium dark:text-white'> 🧠 Test Yourself — On Your Terms</h1>
+                        <h1 className='text-xl text-start text-[#111111] font-medium dark:text-white'>  Test Yourself — On Your Terms</h1>
                         <p className='text-gray-600 leading-relaxed tracking-wide'>
 
                             Ready to challenge your vocab knowledge?<br />
@@ -119,7 +119,7 @@ const LandingPage = () => {
 
                     <div className='w-full lg:w-1/2 p-2 lg:p-10 flex flex-col gap-2'>
                         <h1 className='text-xl text-start text-[#111111] font-medium dark:text-white'>
-                            📊 Track Your Progress Visually
+                            Track Your Progress Visually
                         </h1>
                         <p className='text-gray-600 leading-relaxed tracking-wide'>
                             After each quiz, your performance is instantly analyzed and displayed through interactive charts and graphs:<br />
@@ -150,7 +150,7 @@ const LandingPage = () => {
                 <div className='w-full flex flex-col lg:flex-row mt-4 gap-12 items-center justify-center border-b'>
                     <div className='w-full lg:w-1/2 p-2 lg:p-4 flex flex-col gap-2'>
                         <h1 className='text-xl text-start text-[#111111] font-medium dark:text-white'>
-                            📚 Built-in Dictionary — Look Up, Learn, and Listen
+                            Built-in Dictionary — Look Up, Learn, and Listen
                         </h1>
                         <p className='text-gray-600 leading-relaxed tracking-wide'>
 
