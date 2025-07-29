@@ -169,13 +169,19 @@ const Header = ({ setUser, user, darkMode, setDarkMode }) => {
   };
 
   return (
-    <div className="bg-gray-800 py-3 px-5 w-full flex justify-between items-center">
-      <div className="text-white text-xl font-semibold">GRE Vocab App</div>
+    <div className="bg-[#FFFFFF] py-3 px-5 w-full flex justify-between items-center">
+      <div className="text-white text-xl font-semibold">
+        <img
+          src="/Images/Logo.jpg"
+          className="object-cover w-full h-20"
+          loading="lazy"
+        />
+      </div>
 
       <div className="flex items-center gap-6">
         <button
           onClick={() => setDarkMode(!darkMode)}
-          className="border border-gray-300 rounded-lg py-1 px-3 text-white hover:border-pink-200 hover:text-pink-200 transition"
+          className="border border-[#534B87] rounded-lg py-1 px-3 text-[#534B87]  hover:text-pink-200 transition"
         >
           {darkMode ? "Light Mode" : "Dark Mode"}
         </button>
@@ -184,13 +190,14 @@ const Header = ({ setUser, user, darkMode, setDarkMode }) => {
           <div className="flex gap-4">
             <button
               onClick={() => navigate("/login")}
-              className="border border-gray-800 rounded-lg py-2 px-3 text-white hover:border-pink-200 text-lg"
+              className="bg-[#534B87] rounded-lg py-2 px-4 text-[#FFFFFF]  text-lg"
             >
               Login
             </button>
+
             <button
               onClick={() => navigate("/register")}
-              className="border border-gray-800 py-1 px-4 rounded-lg text-white hover:border-pink-200 text-lg bg-[#26B67C]"
+              className="border border-gray-800 py-1 px-4 rounded-lg text-[#ffffff] hover:border-pink-200 text-lg bg-[#534B87]"
             >
               Signup
             </button>
@@ -199,7 +206,7 @@ const Header = ({ setUser, user, darkMode, setDarkMode }) => {
           <div className="flex items-center gap-4">
             <button
               onClick={handleSubscribe}
-              className="border border-gray-300 rounded-lg py-1 px-3 text-white hover:border-pink-200 hover:text-pink-200 cursor-pointer"
+              className="border border-[#534B87] rounded-lg py-1 px-3 text-[#534B87] h cursor-pointer"
               title={subscribed ? "UnSubscribe to not get daily GRE word notification on your email address" : "Subscribe to get daily GRE word notification on your email address"}
             >
               {subscribed ? "Unsubscribe" : "Subscribe"}
@@ -207,10 +214,10 @@ const Header = ({ setUser, user, darkMode, setDarkMode }) => {
 
             <button
               onClick={handleLogout}
-              className="px-1 mt-1 rounded-lg text-white hover:border-pink-200"
+              className="px-1 mt-1 rounded-lg text-[#534B87] hover:border-pink-200"
               title="Logout"
             >
-              <IoIosLogOut className="text-4xl hover:text-pink-200 hover:translate-x-1" />
+              <IoIosLogOut className="text-4xl  hover:translate-x-1" />
             </button>
           </div>
         )}
